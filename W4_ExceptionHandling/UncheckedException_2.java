@@ -1,15 +1,9 @@
 public class UncheckedException_2 {
     public static void main(String[] args){
         try {
-            Object x[] = new String[3];
-            x[0] = 3;
-
-            int[] arr = {23};
-            System.out.println(arr[3]);
-
-            int[] arrs = null;
-            System.out.println(arrs[0]);
-            
+            arrayStore();
+            indexOut();
+            nullPointer();
         } catch (ArrayStoreException e) {
             System.out.println("Catch ArrayStoreException");
         } catch(IndexOutOfBoundsException e){
@@ -25,5 +19,19 @@ public class UncheckedException_2 {
 
         System.out.println("Andaikan ini kode utama program - berjalan ");
         
+    }
+
+    static void arrayStore(){
+        Object x[] = new String[3];
+        x[0] = 3;
+    }
+    static void indexOut(){
+        int[] arr = {23};
+        System.out.println(arr[3]);
+    }
+    static void nullPointer(){
+        int[] arrs = null;
+        System.out.println(arrs[0]);
+
     }
 }
