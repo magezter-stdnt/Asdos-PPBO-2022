@@ -1,3 +1,6 @@
+// Nama :
+// NIM  : 
+
 public class PPBO_06_Latihan1 {
 public static void main(String[] args) {
     Kelas[] kelas = new Kelas[10];
